@@ -1,0 +1,291 @@
+🚀 CREATIONAL DESIGN PATTERNS
+
+
+✔ 1. Singleton
+
+🔹 Definition: Only one instance exists, globally accessible.
+🔹 Use when: Logging, DB connection, config.
+🔹 Components: Private constructor + static instance + public getter.
+🔹 Mini Example:
+
+AppConfig.getInstance()
+🔹 Trick: “Block new, allow only static access”
+
+✔ 2. Factory Method
+
+🔹 Definition: Subclasses decide how to create objects.
+🔹 Use when: Object creation varies based on condition.
+🔹 Components: Creator class, product interface, concrete creators.
+🔹 Mini Example:
+
+PaymentFactory.get(PAYMENT_TYPE)
+🔹 Trick: “Replace if-else with object factory”
+
+✔ 3. Abstract Factory
+
+🔹 Definition: Creates related family objects without specifying classes.
+🔹 Use when: UI themes, multi-platform kits.
+🔹 Components: Factory interface + many concrete factories.
+🔹 Mini Example:
+
+ModernUIFactory → modern button + modern textbox
+🔹 Trick: “Factory producing entire ecosystem”
+
+✔ 4. Builder
+
+🔹 Definition: Step-by-step construction of complex objects.
+🔹 Use when: Many optional fields (Car, User).
+🔹 Components: Builder class + director (optional).
+🔹 Mini Example:
+
+new UserBuilder().name().email().role().build()
+🔹 Trick: “Fluent chaining = builder”
+
+✔ 5. Prototype
+
+🔹 Definition: Create new object by cloning existing one.
+🔹 Use when: Expensive to construct from scratch.
+🔹 Components: Prototype interface + clone().
+🔹 Mini Example:
+
+clonedCar = original.clone()
+🔹 Trick: “Copy, don’t build”
+
+🏗 STRUCTURAL DESIGN PATTERNS
+✔ 6. Adapter
+
+🔹 Definition: Converts one interface into another client expects.
+🔹 Use when: Old API must work with new code.
+🔹 Components: Target interface + Adapter + Adaptee.
+🔹 Mini Example:
+
+MP4 adapter wrapper over MP3 player
+🔹 Trick: “Plug converter”
+
+✔ 7. Bridge
+
+🔹 Definition: Separate abstraction from implementation so both change independently.
+🔹 Use when: Multi-dimension variations (shape + color).
+🔹 Components: Abstraction, implementor, concrete implementors.
+🔹 Mini Example:
+
+Shape(colorImplementation)
+🔹 Trick: “Composition over inheritance”
+
+✔ 8. Composite
+
+🔹 Definition: Treat tree structures uniformly (individual + group same).
+🔹 Use when: File systems, UI elements, organization charts.
+🔹 Components: Component interface, leaf, composite.
+🔹 Mini Example:
+
+Folder.add(file/subfolder)
+🔹 Trick: “Tree = composite”
+
+✔ 9. Decorator
+
+🔹 Definition: Adds functionality without modifying original class.
+🔹 Use when: Pricing layers, feature add-on, logging wrappers.
+🔹 Components: Component + decorator wrapper.
+🔹 Mini Example:
+
+Coffee → MilkDecorator(Coffee) → SugarDecorator(MilkCoffee)
+🔹 Trick: “Wrap object = add powers”
+
+✔ 10. Facade
+
+🔹 Definition: Simplified interface for complex subsystem.
+🔹 Use when: Libraries, booking systems.
+🔹 Components: Facade class calling subsystems.
+🔹 Mini Example:
+
+TravelBookingFacade.book() internally calls hotel, flight, taxi
+🔹 Trick: “One door for many rooms”
+
+✔ 11. Flyweight
+
+🔹 Definition: Share objects to reduce memory.
+🔹 Use when: Millions of similar objects (game units, text characters).
+🔹 Components: Flyweight store, intrinsic/extrinsic data.
+🔹 Mini Example:
+
+Font cache reused
+🔹 Trick: “Reuse don’t recreate”
+
+✔ 12. Proxy
+
+🔹 Definition: Wrapper controlling access to real object.
+🔹 Use when: Lazy loading, security, caching.
+🔹 Components: Proxy, real subject.
+🔹 Mini Example:
+
+ImageProxy loads only on demand
+🔹 Trick: “Fake object representing real one”
+
+🎯 BEHAVIORAL DESIGN PATTERNS
+✔ 13. Strategy
+
+🔹 Definition: Select algorithm at runtime.
+🔹 Use when: Payment, sorting behaviour change.
+🔹 Components: Strategy interface + concrete strategies + context.
+🔹 Mini Example:
+
+context.setStrategy(new UpiPayment())
+🔹 Trick: “Swap behaviour object”
+
+✔ 14. Observer
+
+🔹 Definition: One-to-many notification automatically.
+🔹 Use when: Event systems, stock updates, UI listeners.
+🔹 Components: Subject + observers.
+🔹 Mini Example:
+
+subject.notifyAll()
+🔹 Trick: “Subscribers auto update”
+
+✔ 15. Command
+
+🔹 Definition: Convert request/action to an object.
+🔹 Use when: Undo, queue, task processing.
+🔹 Components: Command, invoker, receiver.
+🔹 Mini Example:
+
+undoStack.push(new DeleteCommand())
+🔹 Trick: “Action becomes object”
+
+✔ 16. Chain of Responsibility
+
+🔹 Definition: Pass request down a chain until one handles it.
+🔹 Use when: Middleware pipelines, approval chain.
+🔹 Components: Handlers linked in chain.
+🔹 Mini Example:
+
+logger → auth → validation → handler
+🔹 Trick: “Next handler if I can’t do it”
+
+✔ 17. Mediator
+
+🔹 Definition: Central object manages communication between others.
+🔹 Use when: Chat rooms, UI control interaction.
+🔹 Components: Mediator + colleague objects.
+🔹 Mini Example:
+
+chatRoom.send(user1, msg)
+🔹 Trick: “All talk via hub”
+
+✔ 18. Iterator
+
+🔹 Definition: Traverse collection without exposing structure.
+🔹 Use when: Lists, trees, graphs.
+🔹 Components: Iterator + collection.
+🔹 Mini Example:
+
+while(it.hasNext()) print(it.next())
+🔹 Trick: “Cursor object”
+
+✔ 19. Template Method
+
+🔹 Definition: Base class defines algorithm skeleton, subclasses override steps.
+🔹 Use when: Workflow variations.
+🔹 Components: Abstract class + concrete subclasses.
+🔹 Mini Example:
+
+bake() → prepare → cook → serve
+🔹 Trick: “Algorithm in base, details in child”
+
+✔ 20. State
+
+🔹 Definition: Change behavior based on internal state.
+🔹 Use when: ATM machine, TCP connection.
+🔹 Components: State interface + concrete states + context.
+🔹 Mini Example:
+
+context.setState(new DispenseState())
+🔹 Trick: “Behavior = current state”
+
+✔ 21. Visitor
+
+🔹 Definition: Add new operations to objects without modifying them.
+🔹 Use when: Compilers, reporting engines.
+🔹 Components: Visitor + element + accept() method.
+🔹 Mini Example:
+
+node.accept(visitor)
+🔹 Trick: “Operation separated from structure”
+
+✔ 22. Interpreter
+
+🔹 Definition: Grammar + evaluator to interpret expressions.
+🔹 Use when: Expression evaluation, rule engines.
+🔹 Components: Expression classes + context.
+🔹 Mini Example:
+
+Add(Number(1), Number(2)).interpret()
+🔹 Trick: “Expression tree evaluator”
+
+🧠 🔥 ULTIMATE Recall Table (One Line Definition + Trigger)
+Pattern	Quick Definition	Trigger
+Singleton	One shared instance	Global service
+Factory	Decide object creation	Polymorphic creation
+Abstract Factory	Create related objects	Product families
+Builder	Stepwise build	Complex object
+Prototype	Clone object	Expensive creation
+Adapter	Convert interface	Compatibility
+Bridge	Separate abstraction & impl	Multi-variation
+Composite	Tree structure	Part-whole
+Decorator	Add features dynamically	On-demand behaviour
+Facade	Simple API	Hide complexity
+Flyweight	Share objects	Save memory
+Proxy	Access control wrapper	Lazy load/security
+Strategy	Swap behaviour	Algorithm change
+Observer	Auto notifications	Event systems
+Command	Request == object	Undo/queue
+Chain of Responsibility	Pass request along	Pipelines/approvals
+Mediator	Central controller	reduce coupling
+Iterator	Sequential access	traverse collections
+Template	Algorithm skeleton	vary steps
+State	Behaviour by mode	finite state
+Visitor	New actions without change	extend functionality
+Interpreter	Grammar evaluator	expression language
+🎁 How to implement patterns easily? (Mindset Guide)
+
+✔ Replace if-else chains with objects
+✔ Prefer composition over inheritance
+✔ Use interfaces/abstractions for flexibility
+✔ Encapsulate variation into separate classes
+✔ Apply only when solving a real problem — no over-engineering
+
+
+
+
+⭐ QUICK VISUAL SUMMARY (Super Short Definitions)
+
+✔ Singleton → Only one instance
+✔ Factory → Object creation logic outsourced
+✔ Abstract Factory → Group/family creators
+✔ Builder → Chain building step-by-step
+✔ Prototype → Clone instead of re-create
+
+✔ Adapter → Convert interface
+✔ Bridge → Split abstraction/implementation
+✔ Composite → Whole = parts uniform
+✔ Decorator → Wrap to add features
+✔ Facade → Simple front for complex back
+✔ Flyweight → Share objects to save memory
+✔ Proxy → Access wrapper around real object
+
+✔ Strategy → Swap algorithms
+✔ Observer → Subscribers auto update
+✔ Command → Action as object
+✔ Chain → Pass request along pipeline
+✔ Mediator → Talk only through hub
+✔ Iterator → Safe traversal abstraction
+✔ Template → Skeleton + hook methods
+✔ State → Behavior driven by mode
+✔ Visitor → New operations without change
+✔ Interpreter → Evaluate grammar expressions
+
+🔥 Extra Understanding Tricks
+👉 Creational = HOW to create objects
+👉 Structural = HOW to arrange objects
+👉 Behavioral = HOW objects behave/interact

@@ -1,0 +1,124 @@
+-- create
+CREATE TABLE STUDENTS (
+  studentId INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  major TEXT NOT NULL,
+  gpa REAL
+);
+
+-- insert
+INSERT INTO STUDENTS VALUES (101, 'Alice', 'Computer Science', 3.8);
+INSERT INTO STUDENTS VALUES (102, 'Bob', 'Physics', 3.5);
+INSERT INTO STUDENTS VALUES (103, 'Charlie', 'Computer Science', 3.9);
+INSERT INTO STUDENTS VALUES (104, 'Diana', 'Mathematics', 4.0);
+INSERT INTO STUDENTS VALUES (105, 'Eve', 'Physics', 3.2);
+
+-- fetch
+-- Select all students majoring in Computer Science with a GPA greater than 3.7
+SELECT * FROM STUDENTS WHERE major = 'Computer Science' AND gpa > 3.7;
+
+
+-- Q1
+
+select name, major from STUDENTS order by major;
+
+-- Q2 & 5
+
+select count(distinct major) from STUDENTS;
+
+-- Q3
+
+-- SELECT Count(*) FROM STUDENTS Group by major;
+
+SELECT major,Count(*) FROM STUDENTS Group by major;
+
+-- Q4
+
+update STUDENTS
+set gpa = 3.5,major='DSA'
+where studentId=103;
+
+
+SELECT*from STUDENTS
+
+
+
+
+
+
+CREATE TABLE Students (
+  rollId INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  dept TEXT NOT NULL
+);
+
+ALTER TABLE Students
+ADD COLUMN city VARCHAR(50);
+
+ALTER TABLE Students
+ADD COLUMN percentage_in_12th DECIMAL(5, 2);
+
+ALTER TABLE Students
+MODIFY COLUMN dept VARCHAR(100);
+
+-- Insert dummy values
+INSERT INTO Students (rollId, name, dept, city, percentage_in_12th) VALUES
+(0001, 'kunal ', 'CSE', 'Delhi', 92.10),
+(0002, 'aayush ', 'EE', 'Mumbai', 89.60),
+(0003, 'alekya ', 'EE', 'Bangalore', 94.30),
+(0004, 'anil ', 'CSE', 'Chennai', 87.80),
+(005, 'Upasna ', 'Mech', 'Kolkata', 90.25);
+
+--  Show the students table
+SELECT * from Students;
+
+-- Filter people having percentage greater than 80
+SELECT *
+FROM Students
+WHERE percentage_in_12th > 80;
+
+-- Tell the top 3 people
+SELECT *
+FROM Students
+ORDER BY percentage_in_12th DESC
+LIMIT 3;
+
+-- Get the average percentage of all people
+SELECT AVG(percentage_in_12th)
+FROM Students;
+
+
+
+
+
+DELIMITER $$
+
+CREATE PROCEDURE GetStudentsByCity (
+    IN input_city VARCHAR(50)
+)
+BEGIN
+    SELECT rollId, name, dept, city, percentage_in_12th
+    FROM Students
+    WHERE city = input_city;
+END $$
+
+DELIMITER ;
+CALL GetStudentsByCity('Delhi');
+
+
+-- Write a SP for getting students having first division percentage_in_12th
+
+DELIMITER $$
+
+CREATE PROCEDURE GetStudentsByFirstDivision ()
+BEGIN
+    SELECT rollId, name, dept, city, percentage_in_12th
+    FROM Students
+    WHERE percentage_in_12th >60 ;
+END $$
+
+DELIMITER ;
+CALL GetStudentsByFirstDivision();
+
+
+

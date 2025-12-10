@@ -1,0 +1,102 @@
+1. Write a function to reverse a string (without using built-in reverse).DONE
+2. Write a function to check if a string is a palindrome.(DONE)
+3. Given an array of numbers, return a new array with duplicates removed (unique values only).(DONE)
+4. Given two arrays, write a function to return their intersection (common elements).(DONE)
+5. Given an array and a target sum, find two numbers whose sum equals the target (two-sum problem).(DONE)
+6. Write a function to flatten a nested array of arbitrary depth (e.g. [1, [2, [3,4], 5], 6] → [1,2,3,4,5,6]).(DONE)
+7. Implement a deep-clone (deep copy) for JS objects/arrays (without using JSON parse/stringify).(DONE)
+8. Given a string, return the first non-repeated character.
+9. Given two strings, write a function to check if they are anagrams of each other.
+10. Given a large array of numbers, write a function to return the most frequent element.
+11. Write a “debounce” utility function in JS.
+12. Write a “throttle” utility function in JS.
+13. Implement your own version of Promise.all (simple version).
+14. Implement your own version of Promise.race.
+15. Write a polyfill for Array.prototype.map.
+16. Write a function that shallow-merges two objects (without using Object.assign).
+17. Given a string with parentheses/brackets/braces, write a function to check if they’re balanced/valid.
+18. Given a singly linked list (or array simulating it), write a function to reverse it.
+19. Given a linked list, detect if there is a cycle.
+20. Merge two sorted linked lists into one sorted list.
+21. Given a linked list, return the n-th node from the end.
+22. Given a binary tree (represented with JS objects), implement inorder, preorder, postorder traversals.
+23. Given a graph (adjacency list representation), implement Depth-First Search (DFS) and Breadth-First Search (BFS).
+24. Given an array of intervals (objects with start and end), merge overlapping intervals.
+25. Given a sorted array and a target value, implement binary search (return index or −1).
+26. Given an array of integers, find a subarray with maximum sum (Kadane’s algorithm).
+27. Given two sorted arrays, merge them into one sorted array (with O(n + m) complexity).
+28. Given a string/array, find all substrings (or subarrays) — or for strings, find all substrings that are palindromes.
+29. Given an array of words (strings), group them by anagrams (return array of arrays where each subarray is group of anagrams).
+30. Write a function to rotate an array by k steps to the right (or left).
+31. Given a 2D matrix, print its elements in spiral order.
+32. Given a 2D matrix, transpose it (rows ↔ columns).
+33. Given a matrix and a word, check if the word exists in the matrix (word-search problem).
+34. Given an array, find the kth smallest / largest element (without sorting entire array) — using heap / quick-select.
+35. Given an array of integers, return product of array except self (without using division).
+
+36. Given an array, find a “container with most water” — max area formed by two lines (two-pointer).
+37. Implement sorting algorithms in JS: QuickSort, MergeSort, HeapSort, etc.
+38. Given a problem requiring dynamic programming — e.g. compute nth Fibonacci number (with memoization), or other DP-based subset sum / knapsack variations.
+39. Given a string, find the longest substring without repeating characters.
+40. Find the longest common prefix among an array of strings.
+41. Given a sorted array that’s rotated by some pivot, find a target value (search in rotated sorted array).
+42. Given a histogram (array of bar heights), find largest rectangle area (stack + array problem).
+43. Given an expression string (with brackets, operations), parse and evaluate it (infix → postfix → evaluate, or directly using stack).
+44. Given two strings, find the edit distance (Levenshtein distance) — string / DP challenge.
+45. Given an array / list of intervals, find if any intervals overlap (overlap detection).
+46. Given a binary tree, check if it’s height-balanced (difference between left subtree height and right subtree height ≤ 1 for all nodes).
+47. Given a binary search tree (BST), implement insertion and search operations.
+48. Given a binary tree, find its maximum depth and minimum depth.
+49. Given a graph, detect cycle (directed or undirected).
+50. Given a graph, find connected components (or strongly connected components) / check bipartiteness / check if graph is a tree.
+51. Given a grid (2D matrix), find the shortest path (BFS) between two points.
+52. Given a matrix representing a maze (0 = empty, 1 = wall), find if a path exists from start to end (Maze pathfinding via BFS/DFS).
+53. Write a function for “subset sum” — given array and sum, find if there’s a subset of numbers that sums to given value.
+54. Implement a “least recently used (LRU) cache” with get/put operations — using Map / linked list / hash-map.
+55. Given two strings, find longest common subsequence (LCS).
+56. Given a string, find all palindromic substrings (or count them).
+57. Given an array, find subarrays with a given sum (or find count of subarrays with given sum).
+58. Given an array, find longest subarray with sum divisible by k (or find longest such subarray).
+59. Given a string (or array), implement run-length encoding (compress repeated chars), or decompress.
+60. Given a string, check if it’s a rotation of another string.
+61. Given a string, find the smallest window (substring) containing all characters of another string (sliding-window).
+62. Given an array, find the “peak” element (greater than neighbors), or find local maxima/minima.
+63. Given a sequence, find the longest increasing subsequence (LIS).
+64. Given an array of intervals, find the minimum number of intervals you need to remove so that remaining intervals are non-overlapping.
+65. Given a matrix / grid, implement flood-fill (fill connected area) — DFS/BFS on grid.
+66. Given a string and a dictionary of words, implement “word break” — check if string can be segmented into valid dictionary words.
+67. Given a list of tasks with start and end times, find maximum number of non-overlapping tasks you can schedule (interval scheduling).
+68. Given an array of stock prices (prices per day), find max profit you can get from one buy and one sell.
+69. Given an array of stock prices, find max profit with as many transactions as you like (buy-sell multiple times).
+70. Given two sorted arrays, find the median of combined sorted arrays (without fully merging).
+71. Convert infix expression to postfix (or prefix) and evaluate it.
+72. Given a 2D board and a word list, implement a “Boggle” word search (find which words exist in board by traveling adjacent cells).
+73. Given a string, find the minimum number of edits (insert, delete, replace) to transform one string into another (edit distance / DP).
+74. Given a binary tree, find lowest common ancestor (LCA) of two nodes.
+75. Given a binary tree, check if it's symmetric (mirror of itself).
+76. Given a binary tree, perform level-order traversal (BFS) and return array of values level by level.
+77. Given a matrix, find the largest connected region of 1s (or “islands” problem) — number/size of islands.
+78. Given a matrix with 0/1, find shortest path from top-left to bottom-right (if 0 = free, 1 = blocked).
+79. Given a stream (or very large array) of events (objects with timestamp/type), design a function to aggregate events per time window (like per minute/hour).
+80. Given a list of intervals or bookings (start, end), design a function to check if any two bookings overlap (booking conflict detection).
+81. Given a nested object / JSON structure (arbitrary depth of nested objects/arrays), write a function to “flatten” it: produce a list of all leaf values / full paths.
+82. Given two arrays, find their longest common subsequence (LCS).
+83. Given a binary search tree (BST), convert it to a sorted doubly-linked list (in-place).
+84. Given a graph, implement shortest-path algorithm (e.g. Dijkstra) — if weights exist.
+85. Given a graph, detect if there are cycles (especially directed), find cycle using DFS / back-edges.
+86. Given an array of integers, find subarrays whose XOR equals a given value (subarray-XOR problems) — using prefix-XOR / hashing.
+87. Given a large integer represented as string/array of digits, implement big integer arithmetic (addition/subtraction/multiplication) without using BigInt.
+88. Given a binary tree, serialize it to a string and deserialize back to tree. (Tree + recursion / string encoding)
+89. Given a stream (or generator), implement a “sliding-window maximum” / “sliding-window minimum”: for every window of size k, compute max/min efficiently.
+90. Given an array of intervals representing meeting times, find minimum number of conference rooms required to host all meetings (interval scheduling / min-heap).
+91. Given a matrix with obstacles and open spaces, find number of ways to reach from top-left to bottom-right (grid DP / BFS).
+92. Given a list of points (x, y), compute the convex hull (e.g. Graham scan / monotonic chain).
+93. Given two strings, check if one string is a permutation-of-palindrome of the other (i.e. can reorder to form palindrome).
+94. Given an array of integers, find longest subarray with sum = 0.
+95. Given an array, find “next greater element” for each element (next greater to right) — use stack.
+96. Given a string representing a mathematical expression (with +, -, *, /, parentheses), evaluate it (parsing + stack or recursion).
+97. Implement a trie (prefix tree) in JS — support insert, search, prefix search.
+98. Given a list of intervals, merge them and also find total covered length (sum of merged intervals).
+99. Given a set of intervals, find the maximum number of overlapping intervals (max concurrency).
+100. Given a weighted undirected graph, implement minimum spanning tree (MST) algorithm — e.g. Kruskal or Prim.
+101. Level order traversal of tree.(DONE)
