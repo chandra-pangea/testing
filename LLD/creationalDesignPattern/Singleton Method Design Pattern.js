@@ -19,17 +19,6 @@ class Singleton {
       return Singleton.#instance;
     }
   
-    clone() {
-      throw new Error("Singleton cannot be cloned.");
-    }
-  
-    customDeserialize() {
-      throw new Error("Singleton cannot be deserialized manually.");
-    }
-  
-    toJSON() {
-      return { __isSingleton: true, data: this.data };
-    }
   
     static revive(key, value) {
       if (key === "" && value && value.__isSingleton) {
