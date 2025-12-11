@@ -33,12 +33,12 @@
 33. Given a matrix and a word, check if the word exists in the matrix (word-search problem).
 34. Given an array, find the kth smallest / largest element (without sorting entire array) — using heap / quick-select.
 35. Given an array of integers, return product of array except self (without using division).
-
 36. Given an array, find a “container with most water” — max area formed by two lines (two-pointer).
 37. Implement sorting algorithms in JS: QuickSort, MergeSort, HeapSort, etc.
 38. Given a problem requiring dynamic programming — e.g. compute nth Fibonacci number (with memoization), or other DP-based subset sum / knapsack variations.
 39. Given a string, find the longest substring without repeating characters.
 40. Find the longest common prefix among an array of strings.
+
 41. Given a sorted array that’s rotated by some pivot, find a target value (search in rotated sorted array).
 42. Given a histogram (array of bar heights), find largest rectangle area (stack + array problem).
 43. Given an expression string (with brackets, operations), parse and evaluate it (infix → postfix → evaluate, or directly using stack).
