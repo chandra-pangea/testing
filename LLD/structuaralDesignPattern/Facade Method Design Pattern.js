@@ -1,53 +1,6 @@
 // Facade Design Pattern is a Structural pattern from the Gang of Four that simplifies interactions with complex subsystems. It provides a unified, easy-to-use interface while hiding internal details, reducing complexity for clients and promoting cleaner, more maintainable code.
 
-
-// JavaScript does not have interfaces, but we can simulate one using a class with abstract methods
-class Hotel {
-    getMenus() {
-        throw new Error("Method getMenus() must be implemented.");
-    }
-}
-
-
-class NonVegRestaurant {
-    getMenus() {
-        let nv = new NonVegMenu();
-        return nv;
-    }
-}
-
-class VegRestaurant {
-    getMenus() {
-        let v = new VegMenu();
-        return v;
-    }
-}
-
-
-class VegNonBothRestaurant {
-    getMenus() {
-        let b = new Both();
-        return b;
-    }
-}
-
-
-/*package whatever //do not write package name here */
-
 // Assuming the existence of classes VegMenu, NonVegMenu, and Both
-
-class HotelKeeper {
-    getVegMenu() {
-      throw new Error("Method not implemented.");
-    }
-    getNonVegMenu() {
-      throw new Error("Method not implemented.");
-    }
-    getVegNonMenu() {
-      throw new Error("Method not implemented.");
-    }
-}
-  
 
 
 class HotelKeeper {

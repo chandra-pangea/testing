@@ -38,7 +38,6 @@
 38. Given a problem requiring dynamic programming — e.g. compute nth Fibonacci number (with memoization), or other DP-based subset sum / knapsack variations.
 39. Given a string, find the longest substring without repeating characters.
 40. Find the longest common prefix among an array of strings.
-
 41. Given a sorted array that’s rotated by some pivot, find a target value (search in rotated sorted array).
 42. Given a histogram (array of bar heights), find largest rectangle area (stack + array problem).
 43. Given an expression string (with brackets, operations), parse and evaluate it (infix → postfix → evaluate, or directly using stack).
@@ -48,6 +47,7 @@
 47. Given a binary search tree (BST), implement insertion and search operations.
 48. Given a binary tree, find its maximum depth and minimum depth.
 49. Given a graph, detect cycle (directed or undirected).
+
 50. Given a graph, find connected components (or strongly connected components) / check bipartiteness / check if graph is a tree.
 51. Given a grid (2D matrix), find the shortest path (BFS) between two points.
 52. Given a matrix representing a maze (0 = empty, 1 = wall), find if a path exists from start to end (Maze pathfinding via BFS/DFS).

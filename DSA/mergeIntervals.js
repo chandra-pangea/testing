@@ -18,6 +18,28 @@ function mergeIntervals(intervals) {
     return merged;
 }
 
+
+var hasOverlap = function(intervals) {
+    if (intervals.length <= 1) return false;
+
+    // Step 1: sort by start time
+    intervals.sort((a, b) => a[0] - b[0]);
+
+    // Step 2: check adjacent intervals
+    for (let i = 1; i < intervals.length; i++) {
+        const prevEnd = intervals[i - 1][1];
+        const currStart = intervals[i][0];
+
+        if (currStart <= prevEnd) {
+            return true;
+        }
+    }
+
+    return false;
+};
+
+
+
 const interval=[
     { start: 1, end: 3 },
     { start: 2, end: 6 },
