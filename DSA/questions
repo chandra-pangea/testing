@@ -51,12 +51,12 @@
 51. Given a grid (2D matrix), find the shortest path (BFS) between two points.
 52. Given a matrix representing a maze (0 = empty, 1 = wall), find if a path exists from start to end (Maze pathfinding via BFS/DFS).
 53. Write a function for “subset sum” — given array and sum, find if there’s a subset of numbers that sums to given value.
-
-
 54. Implement a “least recently used (LRU) cache” with get/put operations — using Map / linked list / hash-map.
 55. Given two strings, find longest common subsequence (LCS).
 56. Given a string, find all palindromic substrings (or count them).
 57. Given an array, find subarrays with a given sum (or find count of subarrays with given sum).
+
+
 58. Given an array, find longest subarray with sum divisible by k (or find longest such subarray).
 59. Given a string (or array), implement run-length encoding (compress repeated chars), or decompress.
 60. Given a string, check if it’s a rotation of another string.
