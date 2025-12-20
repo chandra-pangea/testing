@@ -55,49 +55,17 @@
 55. Given two strings, find longest common subsequence (LCS).
 56. Given a string, find all palindromic substrings (or count them).
 57. Given an array, find subarrays with a given sum (or find count of subarrays with given sum).
-
-
 58. Given an array, find longest subarray with sum divisible by k (or find longest such subarray).
 59. Given a string (or array), implement run-length encoding (compress repeated chars), or decompress.
 60. Given a string, check if it’s a rotation of another string.
 61. Given a string, find the smallest window (substring) containing all characters of another string (sliding-window).
 62. Given an array, find the “peak” element (greater than neighbors), or find local maxima/minima.
 63. Given a sequence, find the longest increasing subsequence (LIS).
-64. Given an array of intervals, find the minimum number of intervals you need to remove so that remaining intervals are non-overlapping.
-65. Given a matrix / grid, implement flood-fill (fill connected area) — DFS/BFS on grid.
-66. Given a string and a dictionary of words, implement “word break” — check if string can be segmented into valid dictionary words.
-67. Given a list of tasks with start and end times, find maximum number of non-overlapping tasks you can schedule (interval scheduling).
-68. Given an array of stock prices (prices per day), find max profit you can get from one buy and one sell.
-69. Given an array of stock prices, find max profit with as many transactions as you like (buy-sell multiple times).
-70. Given two sorted arrays, find the median of combined sorted arrays (without fully merging).
-71. Convert infix expression to postfix (or prefix) and evaluate it.
-72. Given a 2D board and a word list, implement a “Boggle” word search (find which words exist in board by traveling adjacent cells).
-73. Given a string, find the minimum number of edits (insert, delete, replace) to transform one string into another (edit distance / DP).
-74. Given a binary tree, find lowest common ancestor (LCA) of two nodes.
-75. Given a binary tree, check if it's symmetric (mirror of itself).
-76. Given a binary tree, perform level-order traversal (BFS) and return array of values level by level.
-77. Given a matrix, find the largest connected region of 1s (or “islands” problem) — number/size of islands.
-78. Given a matrix with 0/1, find shortest path from top-left to bottom-right (if 0 = free, 1 = blocked).
-79. Given a stream (or very large array) of events (objects with timestamp/type), design a function to aggregate events per time window (like per minute/hour).
-80. Given a list of intervals or bookings (start, end), design a function to check if any two bookings overlap (booking conflict detection).
-81. Given a nested object / JSON structure (arbitrary depth of nested objects/arrays), write a function to “flatten” it: produce a list of all leaf values / full paths.
-82. Given two arrays, find their longest common subsequence (LCS).
-83. Given a binary search tree (BST), convert it to a sorted doubly-linked list (in-place).
-84. Given a graph, implement shortest-path algorithm (e.g. Dijkstra) — if weights exist.
-85. Given a graph, detect if there are cycles (especially directed), find cycle using DFS / back-edges.
-86. Given an array of integers, find subarrays whose XOR equals a given value (subarray-XOR problems) — using prefix-XOR / hashing.
-87. Given a large integer represented as string/array of digits, implement big integer arithmetic (addition/subtraction/multiplication) without using BigInt.
-88. Given a binary tree, serialize it to a string and deserialize back to tree. (Tree + recursion / string encoding)
-89. Given a stream (or generator), implement a “sliding-window maximum” / “sliding-window minimum”: for every window of size k, compute max/min efficiently.
-90. Given an array of intervals representing meeting times, find minimum number of conference rooms required to host all meetings (interval scheduling / min-heap).
-91. Given a matrix with obstacles and open spaces, find number of ways to reach from top-left to bottom-right (grid DP / BFS).
-92. Given a list of points (x, y), compute the convex hull (e.g. Graham scan / monotonic chain).
-93. Given two strings, check if one string is a permutation-of-palindrome of the other (i.e. can reorder to form palindrome).
-94. Given an array of integers, find longest subarray with sum = 0.
-95. Given an array, find “next greater element” for each element (next greater to right) — use stack.
-96. Given a string representing a mathematical expression (with +, -, *, /, parentheses), evaluate it (parsing + stack or recursion).
-97. Implement a trie (prefix tree) in JS — support insert, search, prefix search.
-98. Given a list of intervals, merge them and also find total covered length (sum of merged intervals).
-99. Given a set of intervals, find the maximum number of overlapping intervals (max concurrency).
-100. Given a weighted undirected graph, implement minimum spanning tree (MST) algorithm — e.g. Kruskal or Prim.
-101. Level order traversal of tree.(DONE)
+64. Given a list of tasks with start and end times, find maximum number of non-overlapping tasks you can schedule (interval scheduling). 
+65. Given an array of stock prices (prices per day), find max profit you can get from one buy and one sell.
+66. Given an array of stock prices, find max profit with as many transactions as you like (buy-sell multiple times).
+67. Given two sorted arrays, find the median of combined sorted arrays (without fully merging).
+
+
+
+
