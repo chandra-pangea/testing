@@ -3,7 +3,7 @@
 // ================================
 
 // === THEORY / Overview ===
-// Aggregation in MongoDB uses a _pipeline_ model: the output of one stage becomes input to the next. :contentReference[oaicite:0]{index=0}
+// Aggregation in MongoDB uses a _pipeline_ model: the output of one stage becomes input to the next.
 // Common pipeline stages include: $match, $project, $group, $sort, $limit, $skip, $unwind, $lookup, $bucket / $bucketAuto, $facet, $set / $addFields / $unset, $setWindowFields (from newer versions) etc.
 // Aggregation is used for analytics, reporting, data transformation, joining collections, histogram / bucketing, windowed computations, and more — especially when simple find() isn’t enough.
 
